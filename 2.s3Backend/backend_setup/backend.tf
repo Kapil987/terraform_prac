@@ -19,6 +19,7 @@ provider "aws" {
 #
 resource "aws_s3_bucket" "bucket_lock" {
   bucket = "kapil987-terraform-state"
+  force_destroy = true
 
   object_lock_enabled = true
   tags = {
@@ -31,8 +32,8 @@ resource "aws_s3_bucket_object_lock_configuration" "bucket_lock_config" {
 
   rule {
     default_retention {
-      mode = "COMPLIANCE" # Even root user can't delete the file until its retention period
-      days = 5
+      mode = "GOVERNANCE" # if COMPLIANCE used Even root user can't delete the file until its retention period
+      days = 1
     }
   }
 }
