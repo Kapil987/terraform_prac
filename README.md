@@ -1,6 +1,4 @@
-# Project Title
-
-Learn Terraform
+# Terraform Hands-on
 
 ## Description
 
@@ -8,12 +6,12 @@ The intenstion of this repository is to learn IaaC approach with AWS
 
 ## Getting Started
 
-we can start with VsCode not a dependency but would be a helpful
+Build, change, and destroy infrastructure with Terraform. Start here to learn the basics of Terraform with your favorite cloud provider.
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10, 
+* An IDE (VScode preferred)
+* Windows 7 or higher
 
 ### Installing
 
@@ -25,6 +23,22 @@ we can start with VsCode not a dependency but would be a helpful
 * Step-by-step bullets
 ```
 terraform apply
+```
+* 3.iamRole
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::123456789012:user/my-test-user-name"
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
+
 ```
 
 ## Help
@@ -55,4 +69,5 @@ Inspiration, code snippets, etc.
 * [Good Start](https://medium.com/avmconsulting-blog/provisioning-aws-infrastructure-with-terraform-6ab885fb3fcb)
 * [Do More](https://devopsrealtime.com/deploy-apache-web-server-using-terraform-iac/)
 * [S3 Object lock](https://medium.com/petabytz/protecting-data-with-amazon-s3-object-lock-7b47931fea73)
+* [IAM Role with Terraform](https://devopslearning.medium.com/aws-iam-ec2-instance-role-using-terraform-fa2b21488536)
 
