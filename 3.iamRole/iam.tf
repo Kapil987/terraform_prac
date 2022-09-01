@@ -22,6 +22,7 @@ EOF
 
   tags = {
     Name = "assume-test-role"
+    CreatedBy = "terraform-user"
   }
 }
 

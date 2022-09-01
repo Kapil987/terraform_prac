@@ -1,4 +1,5 @@
-# Terraform Hands-on
+# Terraform Hands-On
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Terraform_Logo.svg/2560px-Terraform_Logo.svg.png)
 
 ## Description
 
@@ -66,8 +67,10 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE License
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
-* [Good Start](https://medium.com/avmconsulting-blog/provisioning-aws-infrastructure-with-terraform-6ab885fb3fcb)
-* [Do More](https://devopsrealtime.com/deploy-apache-web-server-using-terraform-iac/)
+* [Provisioning-aws-infrastructure-with-terraform](https://medium.com/avmconsulting-blog/provisioning-aws-infrastructure-with-terraform-6ab885fb3fcb)
+* [Assignement](https://devopsrealtime.com/deploy-apache-web-server-using-terraform-iac/)
 * [S3 Object lock](https://medium.com/petabytz/protecting-data-with-amazon-s3-object-lock-7b47931fea73)
 * [IAM Role with Terraform](https://devopslearning.medium.com/aws-iam-ec2-instance-role-using-terraform-fa2b21488536)
-
+* [tfstate file recovery](https://medium.com/@abtreece/recovering-terraform-state-69c9966db71e)
+* [S3 backends data source](https://www.terraform.io/language/settings/backends/s3)
+* [Remote State data Sources Usage](https://stackoverflow.com/questions/57131972/how-to-use-remote-state-data-sources-within-child-modules)
