@@ -21,11 +21,10 @@ Build, change, and destroy infrastructure with Terraform. Start here to learn th
 ### Executing program
 
 * How to run the program
-* Step-by-step bullets
 ```
 terraform apply
 ```
-* 3.iamRole
+* c3.iamRole
 ```json
 {
     "Version": "2012-10-17",
@@ -41,7 +40,12 @@ terraform apply
 }
 
 ```
-* 12.openVPN_aws
+* k10.openVPN_aws
+> Subscribing to Open VPN as we need to accept the terms
+![subscribe Open VPN](https://github.com/Kapil987/terraform_prac/blob/main/k10.openVPN_aws/images/openVPN_sub1.PNG)
+
+> Connecting with private IP
+![private_ip_access](https://github.com/Kapil987/terraform_prac/blob/main/k10.openVPN_aws/images/access_private_ip.PNG)
 
 ## Help
 
@@ -51,8 +55,6 @@ terraform --help
 ```
 
 ## Authors
-
-Contributors names and contact info
 
 [@KAPIL0123](https://twitter.com/KAPIL0123)
 
