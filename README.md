@@ -41,6 +41,7 @@ terraform apply
 }
 
 ```
+* 12.openVPN_aws
 
 ## Help
 
