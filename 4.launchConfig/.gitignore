@@ -1,3 +1,0 @@
-# Ignoring Terraform files
-*.terraform/
-terraform.tfsta*
