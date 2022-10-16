@@ -1,5 +1,8 @@
 # Ignoring Terraform files
 *.terraform/
 terraform.tfstate*
+.terraform.tfstate*
 test.pl
-l11.mo*
+z*
+sample*
+test*
