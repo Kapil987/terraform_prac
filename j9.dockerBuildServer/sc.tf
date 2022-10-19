@@ -6,7 +6,7 @@ provider "aws" {
 
 # 6. Security Group
 resource "aws_security_group" "allow_web" {
-  name        = "Allow Web"
+  name        = "allow jenkins"
   description = "Allow web traffic"
   vpc_id      = data.aws_vpc.default.id
 

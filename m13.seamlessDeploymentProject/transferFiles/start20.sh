@@ -1,5 +1,5 @@
 #!/bin/sh
-arr=(kapil0123/spotify-website-demo kapil0123/romofyi-website-demo kapil0123/construction-website-demo)
+arr=(kapil0123/spotify-website-demo kapil0123/seo-website-demo kapil0123/construction-website-demo)
 docker_stop_rm () {
         docker stop webapp
         docker rm -f webapp

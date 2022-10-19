@@ -1,8 +1,9 @@
+# docker-compose pull
 version: '2'
 services:
   website1:
     image: kapil0123/spotify-website-demo
   website2:
-    image: kapil0123/romofyi-website-demo
+    image: kapil0123/seo-website-demo
   website3:
     image: kapil0123/construction-website-demo
