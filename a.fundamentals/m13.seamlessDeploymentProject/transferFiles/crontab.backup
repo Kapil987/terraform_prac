@@ -1,0 +1,3 @@
+* * * * * ( /root/start10.sh )
+* * * * * ( sleep 20 ; /root/start20.sh )
+* * * * * ( sleep 40 ; /root/start30.sh )
