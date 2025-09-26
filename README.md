@@ -55,10 +55,28 @@ terraform --help
 ```
 ## Troubleshooting and Commands
 
+### Terraform related
+```bash
+terraform plan | grep -A 15 "module.public_bastion_sg.aws_security_group_rule.ingress_rules"
+```
 ### Git related
 ```bash
 git rm --cached -r *.lock.hcl
 git status | less
+```
+
+### AWS Related
+```bash
+aws ec2 describe-images \
+  --region us-east-1 \
+  --owners amazon \
+  --filters "Name=name,Values=ubuntu/images/hvm-ssd-gp3/ubuntu-noble-*-amd64-server-*" \
+            "Name=root-device-type,Values=ebs" \
+            "Name=virtualization-type,Values=hvm" \
+            "Name=architecture,Values=x86_64" \
+  --query 'Images | sort_by(@, &CreationDate) | [-1].ImageId' \
+  --output text
+
 ```
 ## Authors
 
