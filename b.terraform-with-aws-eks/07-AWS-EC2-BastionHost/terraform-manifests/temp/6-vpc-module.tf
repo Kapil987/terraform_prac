@@ -15,9 +15,21 @@ module "vpc" {
   map_public_ip_on_launch = true
   single_nat_gateway = true
 
-  public_subnet_tags_per_az = var.public_subnet_tags_per_az
-    private_subnet_tags = {
+  # public_subnet_tags_per_az = var.public_subnet_tags_per_az
+
+  public_subnet_tags = {
+    Type = "Public Subnets"
+    "kubernetes.io/role/elb" = 1
+    # Add this tag if you need compatibility with older EKS/K8s versions or older AWS Load Balancer Controller.
+    "kubernetes.io/cluster/${local.eks_cluster_name}" = "shared"
+  }
+
+  # https://docs.aws.amazon.com/eks/latest/userguide/network-reqs.html
+  private_subnet_tags = {
     Type = "Private Subnets"
+    "kubernetes.io/role/internal-elb" = 1
+    #  Add this tag if you need compatibility with older EKS/K8s versions or older AWS Load Balancer Controller.
+    "kubernetes.io/cluster/${local.eks_cluster_name}" = "shared"
   }
   database_subnet_tags = {
     Type = "Private Database Subnets"

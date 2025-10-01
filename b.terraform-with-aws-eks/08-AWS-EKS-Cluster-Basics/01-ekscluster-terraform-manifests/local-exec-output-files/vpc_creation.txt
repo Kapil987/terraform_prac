@@ -1,0 +1,2 @@
+vpc created on `date` and VPC IS: vpc-0ab21dc76358eef23 
+vpc created on `date` and VPC is: vpc-00a11c5dc7106a2ba 

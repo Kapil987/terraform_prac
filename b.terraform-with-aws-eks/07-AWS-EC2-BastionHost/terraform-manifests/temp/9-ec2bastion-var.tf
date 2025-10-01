@@ -14,3 +14,5 @@ variable "instance_keypair" {
   type = string
   default = "aws6-nvirginia"
 }
+
+
